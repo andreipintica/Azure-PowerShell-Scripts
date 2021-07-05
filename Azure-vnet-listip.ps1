@@ -7,10 +7,6 @@ List Azure IP adress.
 $list_ip
 
 .NOTES
-Name: Azure-vnet-listip
-Version: 1.0.0
-Author: Andrei Pintica (@AndreiPintica)
-
 The script can also run in Cloud Shell Console.
 #> 
 
