@@ -4,3 +4,4 @@ This repository is used for all my public scripts. Let me know if you have any i
 
 - [Blog](https://cloudopshub.net)
 - [Twitter @AndreiPintica](https://twitter.com/AndreiPintica)
+- [Linkedin](https://linkedin.com/in/andreipintica)
