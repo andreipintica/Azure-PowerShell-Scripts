@@ -14,10 +14,6 @@ get-vmsize -cpu_max 2 -net_support
 get-vmsize -cpu_max 2 -iops_min 6000 
 
 .NOTES
-Name: Azure-get-vmsize
-Version: 1.0.0
-Author: Andrei Pintica (@AndreiPintica)
-
 The script can also run in Cloud Shell Console.
 #>
 
