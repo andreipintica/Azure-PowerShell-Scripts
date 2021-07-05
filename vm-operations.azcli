@@ -1,0 +1,52 @@
+<#
+.SYNOPSIS
+Basic VM Operations.
+.DESCRIPTION
+Basic VM Operations for AZ-CLI.
+.NOTES
+Name: vm-operations
+Version: 1.0.0
+Author: Andrei Pintica (@AndreiPintica)
+#>
+
+
+# List the names of all VMs in a subscription
+az vm list --query "[].name | {Names: join(', ', @)}"
+az vm list --query "[*].[name,resourceGroup]"
+az vm list --query "[*].[name,resourceGroup]" -o table
+
+# List details of a VM
+az vm show -n <name> -g <rg>
+
+# List the names of the VMs in a resource group
+az vm list -g Test --query "[].name | {Names: join(', ', @)}"
+
+# List the os disk names for the vms in a resource group
+az vm list -g Test --query "[*].storageProfile[].osDisk[].name"
+
+# Check if a VM is running
+az vm list -d --query "[?powerState=='VM running' && name=='<vmname>']" | ConvertFrom-Json
+
+# Detach an os disk - NO CAN DO! NEED TO DELETE THE VM FIRST!
+az vm disk detach --name "apiw2019_OsDisk_1_4b40e0412cb84d35b42e4fa77008598f" --resource-group Test --vm-name apiw2019
+
+# Delete a VM
+az vm delete --name apiw2019 --resource-group Test --yes
+
+# attach a disk to a vm
+az vm disk attach --disk apiw2019_OsDisk_1_4b40e0412cb84d35b42e4fa77008598f --resource-group Test --vm-name apiw2019
+
+# start a vm
+az vm start -n <vmname> -g <rg>
+
+# List the NICs on the VM
+az vm nic list -g <rg> --vm-name <vm>
+
+# Show details of a NIC on a VM
+az vm nic show --nic <nic> -g <rg> --vm-name <vm>
+
+# List ip addresses on a VM
+az vm list-ip-addresses -g <rg> --name <vm>
+
+# List the public ip address for a VM.
+az vm list-ip-addresses -g <rg> --name <vm> --query "[*].virtualMachine.network.publicIpAddresses"
