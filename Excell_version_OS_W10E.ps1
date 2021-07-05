@@ -5,7 +5,7 @@ Get Excell version remote OS Windows 10 Enterprise .
 Get Excell version remote for a specific set of computernames running OS Windows 10 Enterprise from txt file.The txt file must contain only the computernames. 
 The computernames result (output) will be exported as a csv file.
 .NOTES
-Name: Get excell version
+Name: Excell_version_OS_W10E
 Version: 1.0.0
 Author: Andrei Pintica (@AndreiPintica)
 #>
