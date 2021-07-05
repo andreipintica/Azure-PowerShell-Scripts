@@ -51,8 +51,8 @@ for ($i = 1; $i -lt 13; $i++) {
 Update-AzureRmVM -VM $vm -ResourceGroupName $rgName
 
 # Option 2: Only attach storage (storage already existing)
-$rgName = 'vm-infra-2'
-$vmName = 'plweaz1ws2'
+$rgName = 'api-test-lab'
+$vmName = 'api-test'
 $location = 'West Europe' 
 $storageType = 'Premium_LRS'
 
