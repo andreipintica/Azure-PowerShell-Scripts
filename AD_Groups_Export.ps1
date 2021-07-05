@@ -7,7 +7,7 @@ Export Active Directory Groups from the main domain.
 Run script and use the function.
 
 .NOTES
-Name: Local-admin-remote
+Name: AD_Groups_Export
 Version: 1.0.0
 Author: Andrei Pintica (@AndreiPintica)
 #>
