@@ -29,10 +29,6 @@ get-vmsize -cpu_min 8 -cpu_max 8 -ram_min 16 -iops_min 24000 -net_support -crypt
 get-vmsize -iops_min 12000 -cpu_max 16 -ram_min 32 -ram_max 48 -net_support -crypt_support -ssd_support -price_max 600 -verbose
 
 .NOTES
-Name: Azure-VM-sizesort
-Version: 1.0.0
-Author: Andrei Pintica (@AndreiPintica)
-
 The script can also run in Cloud Shell Console.
 #>
 
