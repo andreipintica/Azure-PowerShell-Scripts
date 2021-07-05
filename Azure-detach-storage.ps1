@@ -28,8 +28,8 @@ $subscriptionId =
 Get-AzureRmSubscription -SubscriptionId $subscriptionId | Select-AzureRmSubscription
 
 # Detach the data disks from the VM.
-$rgName = 'vm-infra-2'
-$vmName = 'plweaz1ws2'
+$rgName = 'api-test-lab'
+$vmName = 'api-test-vm'
 $dataDiskCount = 12
 $diskNameArray = @()
 
