@@ -13,8 +13,8 @@ Requires Module Az
 #>
 
 #Set up your variables: $subscriptionID = "<SUBSCRIPTION ID>" 
-$rgname = "API-WIN-01" 
-$vmname = "API-W2016-01"  
+$rgname = "myResourceGroup" 
+$vmname = "myVMName"  
 
 #Stop deallocate the VM 
 Stop-AzureRmVM -ResourceGroupName $rgname -Name $vmname  
