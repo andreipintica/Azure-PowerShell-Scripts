@@ -7,9 +7,9 @@
 #       the list of blobs.
 
 # these are for the storage account to be used
-$resourceGroup = "bloblisttestrg"
-$storageAccountName = "contosobloblisttest"
-$containerName = "listtestblobs"
+$resourceGroup = "myResourceGroup"
+$storageAccountName = "myStorageAccount"
+$containerName = "myContainerName"
 
 # get a reference to the storage account and the context
 $storageAccount = Get-AzStorageAccount `
