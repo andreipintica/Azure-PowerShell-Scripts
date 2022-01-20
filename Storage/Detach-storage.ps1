@@ -8,7 +8,7 @@ Name: Azure-detach-storage
 Version: 1.0.0
 Author: Andrei Pintica (@AndreiPintica)
 
-Requires Module Az
+Requires Module AzureRM
 
 #>
 
