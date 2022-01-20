@@ -1,13 +1,13 @@
 <#
 .SYNOPSIS
-Activate Virtualization (VTx) on the laptop from OS using HP BIOS Settings Utility.
+Create Azure File Share with on-prem AD Authentication.
 .DESCRIPTION
 This script was inspired from https://adamtheautomator.com/how-to-set-up-an-azure-file-share-with-on-prem-ad-authentication/
 .EXAMPLE
 Run script.
 
 .NOTES
-Name: Azure-FileShare-On-Prem-Ad-Autentication
+Name: Azure-FileShare-On-Prem-Ad-Authentication
 Version: 1.0.0
 Author: Andrei Pintica (@AndreiPintica)
 
