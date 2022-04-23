@@ -3,7 +3,7 @@
     Sets virtual machine size
     
     .COMPONENT
-    Requires Module Az
+    Requires Azure Az PowerShell module
     
    .Parameter Name
     Specifies the name of the virtual machine

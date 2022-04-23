@@ -19,7 +19,7 @@ Parameter Size - The Virtual Machine Size, if is not specified the dafil size fo
 
 
 .NOTES
-Requires Module Az
+Requires Azure Az PowerShell module
 Requires Library script AzureAzLibrary.ps1
 #>
 

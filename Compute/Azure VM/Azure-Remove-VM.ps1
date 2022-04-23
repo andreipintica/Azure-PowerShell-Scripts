@@ -9,7 +9,7 @@ Parameter ResourceGroupName - Specifies the name of the resource group of the vi
 Parameter RemoveAssociatedResources - Remove all associated resources
 
 .NOTES
-Requires Module Az.Compute
+Requires Azure Az PowerShell module Az.Compute
 #>
 
 param( 
