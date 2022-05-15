@@ -5,8 +5,9 @@ A script to add Hyper-V antivirus exclusions.
 A script to add Hyper-V antivirus exclusions. This script can be used for Windows Server 2016, 2019 and 2022
 .EXAMPLE
 .\Hyper-V-antivirus-exclusions.ps1
-
 .NOTES
+Version: 1.0.0
+Author: Andrei Pintica (@AndreiPintica)
 The script is required to run with Administrator rights.
 Compatible with: Windows Server 2016, Windows Server 2019, Windows Server 2022.
 Update the variables with your current settings
