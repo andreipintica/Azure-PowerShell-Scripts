@@ -1,16 +1,16 @@
 <#
-    .SYNOPSIS
-     Encode-Utf8
+.SYNOPSIS
+ Encode-Utf8
     
-    .Description
-     Re-Write all files in a folder in UTF-8
-    .PARAMETER Source
-     Directory path to recursively scan for files
-    .PARAMETER Destination	 
-     Directory path to write files to
-    .Notes
-    Version: 1.0.1
-    Author: Andrei Pintica (@AndreiPintica)
+.Description
+ Re-Write all files in a folder in UTF-8
+.PARAMETER Source
+ Directory path to recursively scan for files
+.PARAMETER Destination	 
+ Directory path to write files to
+.Notes
+Version: 1.0.1
+Author: Andrei Pintica (@AndreiPintica)
 #>
 
 [CmdletBinding(DefaultParameterSetName="Help")]
