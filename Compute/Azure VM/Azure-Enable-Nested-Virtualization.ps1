@@ -1,4 +1,5 @@
-<# .SYNOPSIS
+<# 
+.SYNOPSIS
      Nested Virtualization Setup Script for Windows Server 2016.
 .DESCRIPTION
      Bootstrap Powershell Script for Setting up NestedVMs. Checks Pre-Reqs, then installs/configures NestedVM. Will restart computer as necessary.
@@ -6,7 +7,7 @@
      Change the name of your VM in this file to what you desire before executing script.
      Windows Server 2016 Flavor Only.
 .TODO
-EDIT ME! Change the Name you want for your Guest VM. 
+Change the Name you want for your Guest VM. 
 #>
      
 $VMName = "NestedVMGuestSample-Level2"
