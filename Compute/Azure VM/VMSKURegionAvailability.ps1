@@ -61,7 +61,7 @@ $exportData = @()
 
 foreach ($Region in $Regions)
 {
-    Write-Host "`nChecking for VM SKU Availability in $Region"
+    Write-Host "Checking for VM SKU Availability in $Region"
     $RegionData = Get-AzComputeResourceSKU -Location $Region | Where-Object {$_.ResourceType -eq 'VirtualMachines' -and $_.Restrictions.ReasonCode -ne 'NotAvailableForSubscription'}
 
     foreach ($VMSku in $VMSKUsCSV)
