@@ -20,7 +20,7 @@ New-AzureADGroup -DisplayName "Store" -MailEnabled $false -SecurityEnabled $true
 
 Get-AzureADGroup -Filter "DisplayName eq 'Store'"
 
-Get-AzureADUser -Filter "Displayname eq 'Tim Jones'"
+Get-AzureADUser -Filter "Displayname eq 'Andrei Pintica'"
 
 Add-AzureADGroupMember -ObjectId "e0179643-72bd-476e-a0a5-c78d09cb231f" -RefObjectId "0e23bdf9-a3cb-48e8-8b4a-cfd64e9f207c" #RefObjectID = User; ObjectId = Gruppe
 
@@ -46,7 +46,7 @@ $user = @{
     Country = "Romania"
     Department = "Information Technology"
     DisplayName = "Andrei Pintica"
-    GivenName = "Fred"
+    GivenName = "API"
     JobTitle = "Azure Administrator"
     UserPrincipalName = "andrei.pintica@$domain"
     PasswordProfile = $PasswordProfile
