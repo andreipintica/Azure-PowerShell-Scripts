@@ -1,3 +1,13 @@
+<#
+.SYNOPSIS
+Check Windows services at the guest operating system level using the Run Command command in Azure Portal on the affected virtual machine on which the RDP connection is not working.
+.DESCRIPTION
+If the Windows Guest Agent is running and working as intended, we can use this powershell script to verify multiple windows services that might affect the RDP.
+.NOTES
+The script is provided 'as is' and without warranty of any kind. 
+Author: Andrei Pintica (@AndreiPintica)
+#>
+
 $s1 = Get-Service -Name TermService
 
 $s2 = Get-Service -Name RpcSs
