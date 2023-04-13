@@ -20,7 +20,9 @@ $s10 = Get-Service -Name ProfSvc
 
 $s11 = Get-Service -Name LanmanWorkstation
 
-$services = $s1,$s2,$s3,$s4,$s5,$s6,$s7,$s8,$s9,$s10,$s11
+$s12 = Get-Service -Name BFE
+
+$services = $s1,$s2,$s3,$s4,$s5,$s6,$s7,$s8,$s9,$s10,$s11,$s12
 
 foreach($service in $services)
 
