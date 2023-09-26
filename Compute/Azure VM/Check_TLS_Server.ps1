@@ -1,14 +1,3 @@
-<#
-.SYNOPSIS
-Check the TLS version using Run Command from Azure Portal on the affected virtual machine.
-.DESCRIPTION
-If the Windows Guest Agent is running and working as intended, we can use this powershell script to verify the TLS settings and the .NET Framework version for WinRM.
-.NOTES
-The script is provided 'as is' and without warranty of any kind. 
-TLS 1.3 is only supported in Windows Server 2022 and later.
-Author: Andrei Pintica (@AndreiPintica)
-#>
-
         Function Get-RegValue {
     [CmdletBinding()]
     Param
