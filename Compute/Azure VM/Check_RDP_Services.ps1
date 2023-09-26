@@ -31,8 +31,9 @@ $s10 = Get-Service -Name ProfSvc
 $s11 = Get-Service -Name LanmanWorkstation
 
 $s12 = Get-Service -Name BFE
+$s13 = Get-Service -Name WinHttpAutoProxySvc
 
-$services = $s1,$s2,$s3,$s4,$s5,$s6,$s7,$s8,$s9,$s10,$s11,$s12
+$services = $s1,$s2,$s3,$s4,$s5,$s6,$s7,$s8,$s9,$s10,$s11,$s12,$13
 
 foreach($service in $services)
 
